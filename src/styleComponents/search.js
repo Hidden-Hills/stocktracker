@@ -4,7 +4,7 @@ import TextField from '@mui/material/TextField';
 
 function SearchBar() {
     return (
-    <div style={{textAlign: 'center'}}>
+    <div style={{textAlign: 'center', padding: '7px'}}>
       <Box
         component="form"
         sx={{

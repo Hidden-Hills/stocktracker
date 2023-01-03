@@ -1,4 +1,4 @@
-import tesla from '../logos/Company=Tesla.svg'
+import adobe from '../logos/Company=Coinbase.svg'
 import Loading from '../images/load.svg'
 import './Componentcss/card.css';
 import React from 'react';
@@ -6,7 +6,7 @@ import axios from 'axios';
 
 
 
-class TeslaComp extends React.Component{
+class CoinbaseComp extends React.Component{
   constructor(props){
     super(props)
     
@@ -17,7 +17,7 @@ class TeslaComp extends React.Component{
   componentDidMount(){
     var options = {
       method: 'GET',
-      url: 'https://yfapi.net/ws/insights/v1/finance/insights?symbol=TSLA',
+      url: 'https://yfapi.net/ws/insights/v1/finance/insights?symbol=COIN',
       params: {modules: 'defaultKeyStatistics,assetProfile'},
       headers: {
         'x-api-key': 'taaVnR4AqU2jfPSB1JzWM2ZuCJsl3qnw2l8pvKqv'
@@ -41,9 +41,9 @@ class TeslaComp extends React.Component{
       return(
         <div style={{ display:'flex', justifyContent:'center' }}>
         <div class="card">
-        <img src={tesla} alt="logo"></img>
+        <img src={adobe} alt="logo"></img>
          <div class="container">
-          <p>Tesla Inc.</p>
+          <p>Coinbase Global, Inc</p>
           <p>${this.state.optChain.finance.result.symbol}</p>
           <p>Price High: </p>
           <p>Low: </p>
@@ -54,4 +54,5 @@ class TeslaComp extends React.Component{
       )}
   }
 }
-export default TeslaComp;
+
+export default CoinbaseComp;

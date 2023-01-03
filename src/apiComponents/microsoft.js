@@ -2,7 +2,6 @@ import google from '../logos/Company=Microsoft.svg'
 import Loading from '../images/load.svg'
 import './Componentcss/card.css';
 import React from 'react';
-import {Link} from 'react-router-dom';
 import axios from 'axios';
 
 
