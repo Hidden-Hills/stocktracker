@@ -1,15 +1,10 @@
 import adobe from '../logos/Company=Adobe.svg'
-import Adobe from '../logos/Adobe-logo.png'
-import './Componentcss/adobe.css';
+import Loading from '../images/load.svg'
+import './Componentcss/card.css';
 import React from 'react';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+
 
 
 class AdobeComp extends React.Component{
@@ -40,43 +35,25 @@ class AdobeComp extends React.Component{
   render(){
     if(!this.state.optChain.finance){
       return(
-        <h1>Loading</h1>
+        <img src={Loading} alt="load"/>
       )
     }
     if(this.state.optChain.finance){
       return(
-       <div>
- 
-       <ImgMediaCard/>
-        </div>
+        <div style={{ display:'flex', justifyContent:'center' }}>
+        <div class="card">
+        <img src={adobe} alt="logo"></img>
+         <div class="container">
+          <p>Adobe Inc.</p>
+          <p>${this.state.optChain.finance.result.symbol}</p>
+          <p>Price High: </p>
+          <p>Low: </p>
+          <a href='example.com'>More Info</a>
+         </div>
+         </div>
+       </div>
       )}
   }
 }
 
-function ImgMediaCard() {
-  return (
-    <Card sx={{ maxWidth: 5 }}>
-      <CardMedia
-        component="img"
-        alt="green iguana"
-        height="140"
-        width="5"
-        image={adobe}
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Lizard
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>
-  );
-}
 export default AdobeComp;

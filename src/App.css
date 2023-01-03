@@ -1,5 +1,9 @@
+*{
+  text-align: center;
+}
 html{
   background-color: #ffffff;
+  text-align: center;
 }
 .App {
   text-align: center;
