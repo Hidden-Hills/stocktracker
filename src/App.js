@@ -1,6 +1,5 @@
 import AdobeComp from './apiComponents/adobe';
 import AmazonComp from './apiComponents/amazon';
-import SearchBar from './styleComponents/search';
 import { Stack } from '@mui/system';
 import './App.css';
 import GoogleComp from './apiComponents/google';
@@ -14,7 +13,7 @@ import CoinbaseComp from './apiComponents/coinbase';
 function App() {
   return (
     <div>
-    <Stack direction="row" spacing={2} justifyContent="center" alignItems="center"> 
+    <Stack direction="row" spacing={2} justifyContent="center" alignItems="center" padding={7}> 
     <AdobeComp/>
     <AmazonComp/>
     <GoogleComp/>
@@ -25,9 +24,6 @@ function App() {
     <TeslaComp/>
     <MondayComp/>
     <CoinbaseComp/>
-    </Stack>
-    <Stack direction="row" spacing={2} justifyContent="center" alignItems="center" padding={4}> 
-    <NetflixComp/>
     </Stack>
     </div>
   );

@@ -9,6 +9,9 @@
     width: 250px;
     padding: 10px;
 }
+.cardParent :hover{
+    box-shadow: 0 4px 8px 0 rgb(59, 121, 255);
+}
   
   /* Add rounded corners to the top left and the top right corner of the image */
 img {

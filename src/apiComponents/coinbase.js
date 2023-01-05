@@ -1,4 +1,4 @@
-import adobe from '../logos/Company=Coinbase.svg'
+import coinbase from '../logos/Company=Coinbase.svg'
 import Loading from '../images/load.svg'
 import './Componentcss/card.css';
 import React from 'react';
@@ -11,42 +11,41 @@ class CoinbaseComp extends React.Component{
     super(props)
     
     this.state = {
-      optChain: []
+      quoteStock: []
     }
   } 
   componentDidMount(){
     var options = {
       method: 'GET',
-      url: 'https://yfapi.net/ws/insights/v1/finance/insights?symbol=COIN',
-      params: {modules: 'defaultKeyStatistics,assetProfile'},
-      headers: {
-        'x-api-key': 'taaVnR4AqU2jfPSB1JzWM2ZuCJsl3qnw2l8pvKqv'
-      }
+      params: {modules: 'symbol'},
+      url: 'https://finnhub.io/api/v1/quote?symbol=COIN&token=ceqck4qad3i9f7a4s08gceqck4qad3i9f7a4s090',
     };
+    
     axios.request(options)
     .then(response=>{
       this.setState({
-          optChain: response.data
+        quoteStock: response.data
       })
       console.log(response.data)
     })
+    
   }
   render(){
-    if(!this.state.optChain.finance){
+    if(!this.state.quoteStock){
       return(
-        <img src={Loading} alt="load"/>
+        <img src={Loading} alt="logo"></img>
       )
     }
-    if(this.state.optChain.finance){
+    if(this.state.quoteStock){
       return(
         <div style={{ display:'flex', justifyContent:'center' }}>
         <div class="card">
-        <img src={adobe} alt="logo"></img>
+        <img src={coinbase} alt="logo"></img>
          <div class="container">
           <p>Coinbase Global, Inc</p>
-          <p>${this.state.optChain.finance.result.symbol}</p>
-          <p>Price High: </p>
-          <p>Low: </p>
+          <p>${this.state.quoteStock.c}</p>
+          <p>Price High: ${this.state.quoteStock.h}</p>
+          <p>Low: ${this.state.quoteStock.l}</p>
           <a href='example.com'>More Info</a>
          </div>
          </div>
