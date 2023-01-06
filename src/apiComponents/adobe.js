@@ -6,6 +6,8 @@ import axios from 'axios';
 
 
 
+
+
 class AdobeComp extends React.Component{
   constructor(props){
     super(props)
@@ -30,6 +32,7 @@ class AdobeComp extends React.Component{
     })
     
   }
+  
   render(){
     if(!this.state.quoteStock){
       return(
@@ -37,7 +40,7 @@ class AdobeComp extends React.Component{
       )
     }
     if(this.state.quoteStock){
-      return(
+      return(        
         <div style={{ display:'flex', justifyContent:'center' }}>
         <div class="card">
         <img src={adobe} alt="logo"></img>
@@ -46,12 +49,14 @@ class AdobeComp extends React.Component{
           <p>${this.state.quoteStock.c}</p>
           <p>Price High: ${this.state.quoteStock.h}</p>
           <p>Low: ${this.state.quoteStock.l}</p>
-          <a href='example.com'>More Info</a>       
+          <p><a href="adobe-info">More Info</a></p>
          </div>
          </div>
        </div>
       )}
   }
 }
+
+
 
 export default AdobeComp;
