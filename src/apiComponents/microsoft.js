@@ -46,7 +46,7 @@ class MicrosoftComp extends React.Component{
           <p>${this.state.quoteStock.c}</p>
           <p>Price High: ${this.state.quoteStock.h}</p>
           <p>Low: ${this.state.quoteStock.l}</p>
-          <a href='example.com'>More Info</a>
+          <p><a href="microsoft-info">More Info</a></p>
          </div>
          </div>
        </div>

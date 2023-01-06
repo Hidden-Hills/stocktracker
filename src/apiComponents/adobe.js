@@ -19,7 +19,6 @@ class AdobeComp extends React.Component{
   componentDidMount(){
     var options = {
       method: 'GET',
-      params: {modules: 'symbol'},
       url: 'https://finnhub.io/api/v1/quote?symbol=ADBE&token=ceqck4qad3i9f7a4s08gceqck4qad3i9f7a4s090',
     };
     
