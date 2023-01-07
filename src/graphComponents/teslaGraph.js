@@ -1,6 +1,6 @@
 import React from 'react';
 
-class AdobeGraph extends React.Component{
+class TeslaGraph extends React.Component{
     render(){
         return(
             <div>
@@ -9,4 +9,4 @@ class AdobeGraph extends React.Component{
         )
     }
 }
-export default AdobeGraph;
+export default TeslaGraph;

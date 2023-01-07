@@ -3,14 +3,17 @@
 }
 html{
   background-color: #ffffff;
+  color: 112121;
   text-align: center;
 }
 .App {
   text-align: center;
   
 }
-
+a{
+  color: #112121;
+}
 .App-link {
-  color: #61dafb;
+  color: whitesmoke;
 }
 

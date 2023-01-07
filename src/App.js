@@ -11,13 +11,13 @@ import MondayComp from './apiComponents/monday';
 import CoinbaseComp from './apiComponents/coinbase';
 import { Route, Routes } from "react-router-dom"
 import AdobeGraph from './graphComponents/adobeGraph';
-import Testing from './graphComponents/amazon';
-import Testing2 from './graphComponents/coinbase';
-import Testing3 from './graphComponents/google';
-import Testing4 from './graphComponents/microsoft';
-import Testing5 from './graphComponents/monday';
-import Testing6 from './graphComponents/netflix';
-import Testing7 from './graphComponents/tesla';
+import AmazonGraph from './graphComponents/amazonGraph';
+import CoinbaseGraph from './graphComponents/coinbaseGraph';
+import GoogleGraph from './graphComponents/googleGraph';
+import MicrosoftGraph from './graphComponents/microsoftGraph';
+import MondayGraph from './graphComponents/mondayGraph';
+import NetflixGraph from './graphComponents/netflixGraph';
+import TeslaGraph from './graphComponents/teslaGraph';
 
 
 function App(){
@@ -26,13 +26,13 @@ function App(){
       <Routes>
         <Route exact path='/' element={<StockComponents/>}/>
         <Route exact path="/adobe-info" element={<AdobeGraph />} />
-        <Route exact path='/amazon-info' element={<Testing/>}/>
-        <Route exact path='/google-info' element={<Testing2/>}/>
-        <Route exact path='/microsoft-info' element={<Testing3/>}/>
-        <Route exact path='/netflix-info' element={<Testing4/>}/>
-        <Route exact path='/tesla-info' element={<Testing5/>}/>
-        <Route exact path='/monday-info' element={<Testing6/>}/>
-        <Route exact path='/coinbase-info' element={<Testing7/>}/>
+        <Route exact path='/amazon-info' element={<AmazonGraph/>}/>
+        <Route exact path='/google-info' element={<GoogleGraph/>}/>
+        <Route exact path='/microsoft-info' element={<MicrosoftGraph/>}/>
+        <Route exact path='/netflix-info' element={<NetflixGraph/>}/>
+        <Route exact path='/tesla-info' element={<TeslaGraph/>}/>
+        <Route exact path='/monday-info' element={<MondayGraph/>}/>
+        <Route exact path='/coinbase-info' element={<CoinbaseGraph/>}/>
       </Routes> 
     </div>
   );
