@@ -8,7 +8,8 @@
     border-radius: 5px; /* 5px rounded corners */
     width: 250px;
     padding: 10px;
-    background-color: #ffffff;
+    background-color: #1d1d1d;
+    color: #ffffff;
 }
 .cardParent :hover{
     box-shadow: 0 4px 8px 0 rgb(59, 121, 255);

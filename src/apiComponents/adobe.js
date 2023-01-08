@@ -46,8 +46,8 @@ class AdobeComp extends React.Component{
          <div class="container">
           <p>Adobe, Inc.</p>
           <p>${this.state.quoteStock.c}</p>
-          <p style={{color: '#4DB918'}}>High: ${this.state.quoteStock.h}</p>
-          <p style={{color: '#DB3410'}}>Low: ${this.state.quoteStock.l}</p>
+          <p>High: ${this.state.quoteStock.h}</p>
+          <p>Low: ${this.state.quoteStock.l}</p>
           <p><a href="adobe-info">More Info</a></p>
          </div>
          </div>
