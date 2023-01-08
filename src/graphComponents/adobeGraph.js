@@ -32,9 +32,14 @@ const Divider = {
 class AdobeGraph extends React.Component{
     render(){
         return(
-            <div style={{textAlign: 'center'}} >
-              <AdobeGraphData/>
+            <div style={{textAlign: 'center', padding: '20px'}} >
+              <Stack direction="column" justifyContent="center" alignItems="center" spacing={0.5}>
               <AdobeProfile/>
+             
+              <div style={{padding: '15px'}}>
+              <AdobeGraphData/>
+              </div>
+              </Stack>
               
           </div>
         )
@@ -76,19 +81,26 @@ class AdobeGraphData extends React.Component{
     },
     
       tooltip: {
-        backgroundColor: '#FCFFC5',
+        headerFormat: '',
+        useHTML:true,
+        backgroundColor: '#ffffff',
+        color: '#ffffff',
         borderColor: 'black',
         borderRadius: 10,
-        borderWidth: 3
+        valueDecimals: 2
     },
       chart: {
         // Explicitly tell the width and height of a chart
         width: 750,
-        height: null
+        height: null,
+        backgroundColor: "#1d1d1d"
       },
     
       title:{
-        text: "Adobe Stock Chart"
+        text: "Adobe Stock Chart",
+        style:{
+          color: '#dfdfdf'
+        }
       },
       subtitle:{
         text: 'Past Month'
@@ -97,7 +109,8 @@ class AdobeGraphData extends React.Component{
       series: [
       {
         name: '$',
-        data: this.state.graphData.c
+        data: this.state.graphData.c,
+        color: '#dfdfdf'
       }
     
       
