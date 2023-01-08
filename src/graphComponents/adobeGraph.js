@@ -8,7 +8,7 @@ import HighchartsReact from 'highcharts-react-official'
 
 
 const Card = {
-  width: '500px', 
+  width: '730px', 
   height: '300px',
   postion: 'fixed', 
   right: '0', 
@@ -173,9 +173,6 @@ class AdobeProfile extends React.Component{
       )}
   }
 }
-
-
-
 class AdobeMarket extends React.Component{
   constructor(props){
     super(props)
@@ -214,14 +211,9 @@ class AdobeMarket extends React.Component{
           <p style={{position: 'relative', top: '14px'}}>52W High: {this.state.marketValues.metric ? this.state.marketValues.metric['52WeekHigh'] : <span></span>}</p>
           <p>52W Low: {this.state.marketValues.metric ? this.state.marketValues.metric['52WeekLow'] : <span></span>}</p>
           </Stack>
-          </Stack>
-          
-          
-          
+          </Stack>  
        </div>
       )}
   }
 }
-
-
 export default AdobeGraph;
