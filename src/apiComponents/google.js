@@ -42,7 +42,7 @@ class GoogleComp extends React.Component{
         <div class="card">
         <img src={google} alt="logo"></img>
          <div class="container">
-          <p>Google LLC.</p>
+          <p>Alphabet Inc</p>
           <p>${this.state.quoteStock.c}</p>
           <p>Price High: ${this.state.quoteStock.h}</p>
           <p>Low: ${this.state.quoteStock.l}</p>

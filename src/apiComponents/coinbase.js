@@ -42,7 +42,7 @@ class CoinbaseComp extends React.Component{
         <div class="card">
         <img src={coinbase} alt="logo"></img>
          <div class="container">
-          <p>Coinbase Global, Inc</p>
+          <p>Coinbase Global Inc</p>
           <p>${this.state.quoteStock.c}</p>
           <p>Price High: ${this.state.quoteStock.h}</p>
           <p>Low: ${this.state.quoteStock.l}</p>

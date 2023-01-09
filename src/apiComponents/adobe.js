@@ -44,7 +44,7 @@ class AdobeComp extends React.Component{
         <div class="card">
         <img src={adobe} alt="logo"></img>
          <div class="container">
-          <p>Adobe, Inc.</p>
+          <p>Adobe Inc</p>
           <p>${this.state.quoteStock.c}</p>
           <p>High: ${this.state.quoteStock.h}</p>
           <p>Low: ${this.state.quoteStock.l}</p>

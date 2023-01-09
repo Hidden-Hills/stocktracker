@@ -19,4 +19,6 @@ a{
 .App-link {
   color: whitesmoke;
 }
-
+.animate__animated.animate__fadeIn {
+  --animate-duration: 1.5s;
+}

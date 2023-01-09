@@ -7,7 +7,7 @@ import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official'
 
 
-const Card = {
+const Card = { 
   width: '730px', 
   height: '300px',
   postion: 'fixed', 
@@ -35,7 +35,6 @@ class AdobeGraph extends React.Component{
             <div style={{textAlign: 'center', padding: '20px'}} >
               <Stack direction="column" justifyContent="center" alignItems="center" spacing={0.5}>
               <AdobeProfile/>
-             
               <div style={{padding: '15px'}}>
               <AdobeGraphData/>
               </div>

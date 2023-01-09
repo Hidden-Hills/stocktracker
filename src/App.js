@@ -18,11 +18,11 @@ import MicrosoftGraph from './graphComponents/microsoftGraph';
 import MondayGraph from './graphComponents/mondayGraph';
 import NetflixGraph from './graphComponents/netflixGraph';
 import TeslaGraph from './graphComponents/teslaGraph';
-
+import 'animate.css';
 
 function App(){
   return (
-    <div>
+    <div className="animate__animated animate__fadeIn">
       <Routes>
         <Route exact path='/' element={<StockComponents/>}/>
         <Route exact path="/adobe-info" element={<AdobeGraph />} />

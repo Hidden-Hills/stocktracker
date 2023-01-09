@@ -42,7 +42,7 @@ class MicrosoftComp extends React.Component{
         <div class="card">
         <img src={google} alt="logo"></img>
          <div class="container">
-          <p>Microsoft Inc.</p>
+          <p>Microsoft Corp</p>
           <p>${this.state.quoteStock.c}</p>
           <p>Price High: ${this.state.quoteStock.h}</p>
           <p>Low: ${this.state.quoteStock.l}</p>

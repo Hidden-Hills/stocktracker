@@ -42,7 +42,7 @@ class AmazonComp extends React.Component{
         <div class="card">
         <img src={amazon} alt="logo"></img>
          <div class="container">
-          <p>Amazon Inc.</p>
+          <p>Amazon.com Inc</p>
           <p>${this.state.quoteStock.c}</p>
           <p>Price High: ${this.state.quoteStock.h}</p>
           <p>Low: ${this.state.quoteStock.l}</p>
